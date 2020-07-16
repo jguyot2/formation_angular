@@ -1,14 +1,21 @@
-<form (ngSubmit)="onSubmit()" method="post"
-#recipeCreationForm="ngForm">
+<form (ngSubmit)="onSubmit()" >
+  <div>
+    Name
   <input type="text" class="form-control" id="name"
        required
        [(ngModel)]="createdRecipe.name" name="name">
-    <input type="text" class="form-control" id="description"
+    </div>
+    <div> Description
+      <input type="text" class="form-control" id="description"
     required
-    [(ngModel)]="createdRecipe.description" name="description">
-    <input type="text" class="form-control" id="description"
+    [(ngModel)]="createdRecipe.description" name="description" title="description">
+    </div>
+    <div>
+      Picture url
+      <input type="text" class="form-control" id="description"
        required
-       [(ngModel)]="createdRecipe.picture" name="picture">
+       [(ngModel)]="createdRecipe.picture" name="picture" title="picture">
        <!-- ingrédients, instructions-->
-       <input type="submit" name="submit">
+</div>
+       <input type="submit" id="submit" value="Submit"  />
 </form>

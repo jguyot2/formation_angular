@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {RecipeListComponent} from './recipe-list/recipe-list.component';
 import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
-import{RecipeCreationComponent} from './recipe-creation/recipe-creation.component';
+import {RecipeCreationComponent} from './recipe-creation/recipe-creation.component';
 
 const routes: RouterModule [] = [
     {

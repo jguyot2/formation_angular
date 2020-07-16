@@ -20,7 +20,7 @@ export class RecipeService {
 
     putRecipe(recipe : Recipe):Observable<Recipe> {
       return this.http.post<Recipe>(
-        this.recipeUrl,recipe
+        this.recipeUrl,recipe // Paramètre de la requête
       );
     }
 }

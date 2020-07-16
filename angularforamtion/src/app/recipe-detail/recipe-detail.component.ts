@@ -12,7 +12,7 @@
 
       constructor(private recipeService:RecipeService, private activatedRoute : ActivatedRoute) {
       }
-
+ 
       ngOnInit(): void {
 
      let id : number = Number(this.activatedRoute.snapshot.paramMap.get('id'));

@@ -14,7 +14,7 @@ export class RecipeCreationComponent implements OnInit {
 
 
   @Input()
-  createdRecipe : Recipe = new Recipe();
+  createdRecipe : Recipe;
 
   ngOnInit(): void {}
 
