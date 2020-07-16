@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()" method="post"
+#recipeCreationForm="ngForm">
+  <input type="text" class="form-control" id="name"
+       required
+       [(ngModel)]="createdRecipe.name" name="name">
+    <input type="text" class="form-control" id="description"
+    required
+    [(ngModel)]="createdRecipe.description" name="description">
+    <input type="text" class="form-control" id="description"
+       required
+       [(ngModel)]="createdRecipe.picture" name="picture">
+       <!-- ingrédients, instructions-->
+       <input type="submit" name="submit">
+</form>

@@ -11,10 +11,16 @@ export class RecipeService {
     private recipeUrl ='http://10.0.1.101:8080/api/v1/recipes';
 
     getRecipes(): Observable<Recipe[]> {
-	return this.http.get<Recipe[]>(this.recipeUrl)
-    }
-    getRecipeById(id: number): Observable<Recipe> {
-	return this.http.get<Recipe>(`${ this.recipeUrl }/${ id }`);
+	     return this.http.get<Recipe[]>(this.recipeUrl)
     }
 
+    getRecipeById(id: number): Observable<Recipe> {
+	     return this.http.get<Recipe>(`${ this.recipeUrl }/${ id }`);
+    }
+
+    putRecipe(recipe : Recipe):Observable<Recipe> {
+      return this.http.post<Recipe>(
+        this.recipeUrl,recipe
+      );
+    }
 }
