@@ -1,6 +1,6 @@
-import {Recipe} from '../app/model/recipe.model';
-import {Ingredient} from '../app/model/ingredient.model';
-import {RecipeIngredient} from '../app/model/recipe-ingredient.model';
+import {Recipe} from '../app/recipe/recipe.model';
+import {Ingredient} from '../app/recipe/ingredient.model';
+import {RecipeIngredient} from '../app/recipe/recipe-ingredient.model';
 
 
 export const MOCK_RECIPES: Recipe[] = [
@@ -133,4 +133,4 @@ export const MOCK_RECIPES: Recipe[] = [
       'Garnish with 2 olives.'
     ]
   }
-]; 
+];
